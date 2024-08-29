@@ -151,24 +151,14 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Hamza Rashid
+Dhaval Rupapara
 
-- Email : hamza022697@gmail.com
-- LinkedIn: https://www.linkedin.com/in/mhamza-rashid/
+- Email : rupaparadhaval1234@gmail.com
+- LinkedIn: https://www.linkedin.com/in/dhaval-rupapara/
 
-Bilal Rashid
 
-- Email: bilal0197@gmail.com
-- LinkedIn: https://www.linkedin.com/in/bilal-rashid-a04625198/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-I would like to thank Ed Roh for inspiring the [project idea](https://www.youtube.com/watch?v=uoJ0Tv-BFcQ&t=52s), and my heartfelt gratitude goes to my brother and partner for this project, Bilal Rashid.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
