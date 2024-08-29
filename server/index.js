@@ -1,9 +1,3 @@
-/* 
-The code is setting up a server using the Express framework in JavaScript. It imports various
-middleware packages such as `express`, `body-parser`, `cors`, `dotenv`, `helmet`, and `morgan`. It
-also imports individual data fetching functions from different files.
-**/
-
 // Imports for middleware
 import express from "express";
 import bodyParser from "body-parser";
@@ -57,15 +51,16 @@ app.get('/api/statistics/:ticker', async (req, res) => {
 
 // Endpoint to fetch profile data for a given ticker
 app.get('/api/profile/:ticker', async (req, res) => {
-  const ticker = req.params.ticker.toUpperCase();
+    const ticker = req.params.ticker.toUpperCase();
 
-  try {
-      const profileDataForTicker = await getProfileData(ticker);
-      res.status(200).json(profileDataForTicker);
-  } catch (error) {
-      res.status(500).json({ message: `Error fetching profile data for ticker ${ticker}: ${error.message}` });
-  }
+    try {
+        const profileDataForTicker = await getProfileData(ticker);
+        res.status(200).json(profileDataForTicker);
+    } catch (error) {
+        res.status(500).json({ message: `Error fetching profile data for ticker ${ticker}: ${error.message}` });
+    }
 });
+
 
 // Endpoint to fetch historical data for a given ticker
 app.get('/api/historical/:ticker', async (req, res) => {

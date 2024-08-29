@@ -111,7 +111,7 @@ Please follow instructions below to install and run the project on your local de
 
 4. Enter your API in `client/.env.local` file.
    ```sh
-   API_TOKEN = 'ENTER YOUR API'
+   VITE_API_TOKEN = 'ENTER YOUR API'
    ```
 
 5. Run the the development server on your local machine.

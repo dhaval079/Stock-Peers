@@ -14,11 +14,13 @@
 
 // Define a type for the callback function to handle WebSocket data
 type WebSocketDataCallback = (data: unknown) => void;
-
 // Function to connect to WebSocket with symbol and data callback
 export const connectToWebSocket = (symbol: string, onDataReceived: WebSocketDataCallback): WebSocket => {
+  // Access the token from the environment variable
+  const token = import.meta.env.VITE_VITE_API_TOKEN;
+
   // Create a new WebSocket instance with the provided URL
-  const socket = new WebSocket('wss://ws.finnhub.io?token=' + `${import.meta.env.API_TOKEN}`);
+  const socket = new WebSocket(`wss://ws.finnhub.io?token=${token}`);
 
   // Event listener for when the WebSocket connection is opened
   socket.addEventListener('open', (_event) => {
